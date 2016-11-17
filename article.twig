@@ -109,13 +109,17 @@
                                     {{this.render('partials/article/_share_article_buttons.twig', {article: article, class : 'news__social--horizontal'}) | raw}}
                                 </div>
                             </div>
-                    <div class="col-third" style="background-color:#fff; max-height:350px ">
+                    <div class="col-third hidden-xs hidden-sm" style="background-color:#fff; max-height:350px ">
                         <a class="card swap card__ without__image"><img src="http://submit.pagemasters.com.au/themes/squaread.png" style="display:block; margin:3% auto 0 auto"></a>
                     </div>
                             <div class="news__sidebar">
                                 {{this.render("partials/article/_popular_articles.twig", {articleId: article.id}) | raw }}
                             </div>
                         </div>
+                                            <div class="col-full hidden-xs hidden-md hidden-lg" style="background-color:#fff; max-height:110px ">
+                        <a class="card swap card__ without__image"><img src="http://submit.pagemasters.com.au/themes/bannerad.png" style="display:block; margin:3% auto 0 auto"></a>
+                    </div>
+
                     </div>
                 </div>
 
@@ -123,6 +127,9 @@
         </div>
     </div>
 </div>
+                    <div class="col-fill hidden-sm hidden-md hidden-lg" style="background-color:#fff; max-height:110px">
+                        <a class="card swap card__ without__image"><img src="http://submit.pagemasters.com.au/themes/mobbannerad.png" style="display:block; margin:3% auto 0 auto"></a>
+                    </div>
 
 {% set network = _Network.getNetworkData() %}
 {% if network.thirdPartyIntegrations['disqus'] | length > 0 and network.thirdPartyIntegrations['disqus']['shortName'] != '' %}
