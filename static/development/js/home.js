@@ -160,7 +160,7 @@ HomeController.Listing = (function ($) {
                             if (i == 2 || i == 10) {
                                 data.articles[i]['containerClass'] = 'col-third'; 
                                 articleTemplate = Handlebars.compile(addTemplate);
-                                var add = articleTemplate();
+                                var add = articleTemplate(data.articles[i]);
                                 $('.ajaxArticles').append(add);
                             }
 

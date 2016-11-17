@@ -24,7 +24,7 @@
             {% endif %}
 
             <div class="col-md-4 trending-articles">
-                <h1 class="trending-header">TRENDING TODAY</h1>
+                <h1 class="trending-header">TODAYS STORIES</h1>
                     {% for i in 1..3 %}
                         {% if articles[i] %}
                             {{this.render('partials/_single-article.twig', {article: articles[i], 'position': (i+1), containerClass: 'col-full', cardClass : 'card__news card--local'}) | raw}}
